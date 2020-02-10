@@ -2,6 +2,7 @@ import urequests
 import os
 import time
 import network
+import machine
 
 def connect():
     sta_if = network.WLAN(network.STA_IF)
@@ -19,6 +20,7 @@ def doIt():
     os.remove("/boot.py")
     os.rename('./main.py','./boot.py')
     os.listdir()
+    machine.reset()
 
 def all():
     connect()
