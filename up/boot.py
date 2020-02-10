@@ -29,3 +29,13 @@ simple_cron.run() # You have to run it once. This initiates the SimpleCRON actio
 simple_cron.add('Every second minute',lambda *a,**k: all(),minutes=range(0, 59, 2),seconds=0)
 
 # tst 222222222222222222222222222222222222222222222222222222222
+
+
+from machine import Pin
+from time import sleep
+
+led = Pin(2, Pin.OUT)
+
+while True:
+  led.value(not led.value())
+  sleep(2)
