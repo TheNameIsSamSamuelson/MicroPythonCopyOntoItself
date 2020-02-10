@@ -11,7 +11,7 @@ def connect():
     print(sta_if.isconnected())
 
 def doIt():
-    response = urequests.get('https://raw.githubusercontent.com/TheNameIsSamSamuelson/esp32/master/up/boot.py')
+    response = urequests.get('https://raw.githubusercontent.com/TheNameIsSamSamuelson/MicroPythonCopyOntoItself/master/up/boot.py')
     file = open("/main.py", 'w')
     os.listdir()
     file.write(response.text)
