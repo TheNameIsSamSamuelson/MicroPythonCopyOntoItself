@@ -33,4 +33,4 @@ simple_cron.add('Every second minute',lambda *a,**k: all(),minutes=range(0, 59, 
 from machine import Pin
 
 led = Pin(2, Pin.OUT)
-simple_cron.add('Every second second',lambda *a,**k: led.value(not led.value()),seconds=range(0, 59, 2))
+simple_cron.add('Every second second',lambda *a,**k: led.value(not led.value()),seconds=range(0, 59, 1))
