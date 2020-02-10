@@ -38,4 +38,4 @@ led = Pin(2, Pin.OUT)
 
 while True:
   led.value(not led.value())
-  sleep(2)
+  sleep(0.5)
