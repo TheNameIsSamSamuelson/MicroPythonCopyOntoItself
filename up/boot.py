@@ -28,4 +28,4 @@ from scron.week import simple_cron
 simple_cron.run() # You have to run it once. This initiates the SimpleCRON action, and reserve one timmer.
 simple_cron.add('Every second minute',lambda *a,**k: all(),minutes=range(0, 59, 2),seconds=0)
 
-# tst
+# tst 222222222222222222222222222222222222222222222222222222222
